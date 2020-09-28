@@ -27,7 +27,6 @@ function Navbar() {
     <div className={scrolled ? "shrinked_nav navbar" : "navbar"}>
       <span>
         <img src="dlogo.png" alt="DCU" />
-        <Link href="/">DCU2020</Link>
       </span>
       <ul>
         <li>

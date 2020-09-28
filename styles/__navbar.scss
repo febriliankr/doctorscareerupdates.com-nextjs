@@ -14,16 +14,19 @@
 
   span {
     display: flex;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 26px;
     align-items: center;
     margin-left: 30px;
     color: $text-muted;
+    
 
     img {
-      max-width: 30px;
-      margin-right: 5px;
+      max-width: 50px;
+      margin-left: 15px;
+      transition: 0.4s ease-in-out;
     }
+
 
     a {
       text-decoration: none;
@@ -65,4 +68,8 @@
 
 .shrinked_nav {
     height: $nav-shrinked !important;
+    img {
+      max-width: 30px !important;
+    }
+
 }
