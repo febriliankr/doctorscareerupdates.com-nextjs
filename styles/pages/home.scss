@@ -16,8 +16,61 @@
     align-items: center;
     text-align: center;
 
-    .big-logo{
-        max-width: 400px;
+    .big-logo {
+      max-width: 400px;
     }
+  }
+}
+
+$text-grey: #313131;
+
+.herosectionsingular__container {
+  margin: 0px 0px 100px;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+
+  .preheading {
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: $text-grey;
+    @media screen and (max-width: 786px) {
+      font-size: 16px;
+    }
+  }
+
+  .postheading {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    margin: 15px 200px;
+    color: $text-grey;
+    @media screen and (max-width: 786px) {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    color: #ff8639;
+    span {
+      color: #ff8639;
+      -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #ff8639;
+    }
+  }
+}
+
+.medicalgames__container {
+  // align-items: center;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  section {
+    margin: 0 40px;
+    text-align: left;
   }
 }

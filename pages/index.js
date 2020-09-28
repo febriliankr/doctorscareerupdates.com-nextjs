@@ -2,6 +2,7 @@ import Head from "next/head";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
+import HeroSectionSingular from "../components/HeroSectionSingular";
 
 export default function Home() {
   const handleClick = (e) => {
@@ -20,6 +21,7 @@ export default function Home() {
         <section>
           <img className="big-logo" src="logo-dcu-big.png" alt="Logo DCU 2020" />
           <h1>”Synergism in the axis of visions”</h1>
+          <HeroSectionSingular/>
         </section>
       </div>
     </div>

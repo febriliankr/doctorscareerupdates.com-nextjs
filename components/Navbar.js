@@ -5,20 +5,24 @@ import dynamic from "next/dynamic";
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
-  window.onscroll = function () {
-    scrollFunction();
-  };
+  if (process.browser) {
+    // Client-side-only code
+    window.onscroll = function () {
+      scrollFunction();
+    };
 
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
-    ) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
     }
   }
+
   return (
     <div className={scrolled ? "shrinked_nav navbar" : "navbar"}>
       <span>
