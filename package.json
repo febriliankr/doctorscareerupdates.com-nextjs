@@ -1,0 +1,24 @@
+{
+  "name": "doctorscareerupdates-nextjs",
+  "version": "0.1.2",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-on-netlify",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^0.1.1",
+    "axios": "^0.20.0",
+    "netlify-lambda": "^2.0.1",
+    "next": "9.5.3",
+    "next-on-netlify": "^2.4.0",
+    "node-sass": "^4.14.1",
+    "nodemailer": "^6.4.11",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-hook-form": "^6.8.6",
+    "yup": "^0.29.3"
+  }
+}

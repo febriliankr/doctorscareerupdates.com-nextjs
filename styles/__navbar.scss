@@ -1,0 +1,60 @@
+.navbar {
+    height: 50px;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    color: $text-color;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  
+    span {
+      display: flex;
+      font-weight: 700;
+      font-size: 20px;
+      align-items: center;
+      margin-left: 30px;
+  
+      img {
+        max-width: 30px;
+        margin-right: 5px;
+      }
+  
+      a {
+        text-decoration: none;
+        color: $text-color;
+        &:hover {
+          color: $text-link;
+        }
+      }
+    }
+  
+    ul {
+      height: 100%;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 0;
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      margin-right: 20px;
+  
+      @media (max-width: $breakpoint-iphone) {
+        display: none;
+      }
+  
+      a {
+        text-decoration: none;
+        padding: 0 20px 0;
+        font-size: 16px;
+        color: $text-color;
+  
+        &:hover {
+          color: $text-link;
+        }
+      }
+    }
+  }
+  
