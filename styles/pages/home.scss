@@ -1,0 +1,23 @@
+.home-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 900px;
+  top: 0;
+  width: 100%;
+  padding-top: 150px;
+  background-image: url(/hero-bg-light.svg);
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .big-logo{
+        max-width: 400px;
+    }
+  }
+}
