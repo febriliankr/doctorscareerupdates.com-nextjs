@@ -34,10 +34,10 @@ function Navbar() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/examplehookform">Quiz</Link>
+          <Link href="/dcu-mg">DCU MG</Link>
         </li>
         <li>
-          <Link href="/examplehookform">About</Link>
+          <Link href="/examplehookform">Register</Link>
         </li>
       </ul>
     </div>

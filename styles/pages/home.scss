@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   padding-top: 150px;
-  background-image: url(/hero-bg-light.svg);
+  background-image: url(https://images.unsplash.com/photo-1542241800-918eb3c793a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1932&q=80);
 
   section {
     display: flex;
@@ -18,6 +18,20 @@
 
     .big-logo {
       max-width: 400px;
+    }
+
+    .big-title{
+      h1 {
+        font-size: 40px;
+        font-weight: 300;
+        color: $text-muted;
+        span {
+          color: #ff8639;
+          -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: $text-muted;
+        }
+      }
     }
   }
 }

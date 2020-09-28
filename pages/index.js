@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Nextjs Nodemailer App | Febrilian</title>
-        <link rel="icon" href="/favicon.ico" />
+      <title>Doctors' Career Updates</title>
+        <link rel="icon" href="/dlogo.png" />
       </Head>
       <div className="home-container">
         <section>
           <img className="big-logo" src="logo-dcu-big.png" alt="Logo DCU 2020" />
-          <h1>”Synergism in the axis of visions”</h1>
+          <section className="big-title"><h1>Pioneering prospects,<br></br>perceiving synergism</h1></section>
           <HeroSectionSingular/>
         </section>
       </div>
