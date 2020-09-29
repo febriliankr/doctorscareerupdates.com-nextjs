@@ -15,25 +15,22 @@
   span {
     display: flex;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 24px;
     align-items: center;
     margin-left: 30px;
     color: $text-muted;
     
-
     img {
       max-width: 50px;
       margin-left: 15px;
+      margin-right: 20px;
       transition: 0.4s ease-in-out;
     }
 
-
-    a {
+    .navbar__title {
       text-decoration: none;
-      color: $text-color;
-      &:hover {
-        color: $text-link;
-      }
+      color: $text-muted;
+      cursor: pointer;
     }
   }
 

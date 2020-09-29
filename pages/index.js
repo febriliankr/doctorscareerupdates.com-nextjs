@@ -26,8 +26,7 @@ export default function Home() {
             alt="Logo DCU 2020"
           />
           <section className="big-title">
-            <h1>
-              Pioneering prospects,<br></br>perceiving synergism
+            <h1>The biggest seminar aiming to broaden knowledge about the opportunities and development of the medical profession in various employment sectors.
             </h1>
           </section>
         </section>
