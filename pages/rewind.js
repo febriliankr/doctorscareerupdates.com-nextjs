@@ -16,7 +16,7 @@ export default function rewind() {
         <div className="rewind__container">
           <div className="question__container">
             <div className="avatar">
-              <img src="alessafahira.png" alt="images" />
+              <img src="alessafahira.webp" alt="images" />
               <div>
                 <h4>
                   Alessa Fahira <span>FKUI 2015</span>
@@ -102,7 +102,7 @@ export default function rewind() {
         <div className="rewind__container">
           <div className="question__container">
             <div className="avatar">
-              <img src="angga.jpg" alt="images" />
+              <img src="anggawiratama.webp" alt="images" />
               <div>
                 <h4>
                   Angga Wiratama <span>PO DCU 2016</span>
@@ -172,7 +172,7 @@ export default function rewind() {
           <div className="question__container">
           
             <div className="avatar">
-              <img src="dioalief.jpg" alt="images" />
+              <img src="dioalief.webp" alt="images" />
               <div>
                 <h4>
                   Dio Alief Supriyanto <span>KETUA BEM IKM FKUI 2019</span>

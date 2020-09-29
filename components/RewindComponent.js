@@ -18,7 +18,7 @@ function RewindComponent() {
         <Link href="/rewind#alessafahira">
           <div className="card">
             <div className="imgBx">
-              <img src="alessafahira.png" alt="images" />
+              <img src="alessafahira.webp" alt="images" />
             </div>
             <div className="details">
               <h2>
@@ -33,7 +33,7 @@ function RewindComponent() {
         <Link href="/rewind#anggawiratama">
           <div className="card">
             <div className="imgBx">
-              <img src="angga.jpg" alt="images" />
+              <img src="anggawiratama.webp" alt="images" />
             </div>
             <div className="details">
               <h2>
@@ -48,7 +48,7 @@ function RewindComponent() {
         <Link href="/rewind#dioalief">
           <div className="card">
             <div className="imgBx">
-              <img src="dioalief.jpg" alt="Dio Alief" />
+              <img src="dioalief.webp" alt="Dio Alief" />
             </div>
             <div className="details">
               <h2>
