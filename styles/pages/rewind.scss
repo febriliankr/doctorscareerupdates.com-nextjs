@@ -1,0 +1,48 @@
+.rewind__container {
+
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    margin: 30px auto 50px;
+    background-color: white;
+    max-width: 1000px;
+    padding: 30px 85px 50px 85px;
+    color: #424a5e;
+    p {
+      font-size: 20px;
+    }
+    .more {
+      font-size: 20px;
+      color: $text-link;
+      cursor: pointer;
+      width: fit-content;
+      &:hover{
+          text-decoration: underline;
+      }
+    }
+
+    .question__container{
+      .avatar {
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+        h4 span {
+          font-weight: 400;
+        }
+        img{
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+      }
+
+      p{
+        font-size: 18px;
+      }
+        
+    }
+  }
+  

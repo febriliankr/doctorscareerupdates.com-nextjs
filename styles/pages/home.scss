@@ -20,7 +20,7 @@
       max-width: 400px;
     }
 
-    .big-title{
+    .big-title {
       h1 {
         font-size: 40px;
         font-weight: 300;
@@ -43,11 +43,15 @@ $text-grey: #313131;
   align-items: center;
   text-align: center;
   padding: 30px;
+  background-image: $svg1;
+  background-size: 100%;
+  color: $dcu-blue;
+  transition: 0.5s ease-in-out;
   background-color: $dcu-blue;
-  color: $text-light;
+  color: white;
 
   .preheading {
-    font-family: "Nunito", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 22px;
     margin-top: 60px;
@@ -58,7 +62,7 @@ $text-grey: #313131;
   }
 
   .postheading {
-    font-family: "Nunito", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 20px;
     margin: 30px 200px 60px;
@@ -74,7 +78,7 @@ $text-grey: #313131;
     font-size: 40px;
     color: #ff8639;
     transition: 0.3s ease-in-out;
-    &:hover{
+    &:hover {
       color: white;
     }
     span {
@@ -82,7 +86,6 @@ $text-grey: #313131;
       -webkit-text-fill-color: $dcu-blue; /* Will override color (regardless of order) */
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: #ff8639;
-
     }
   }
 }
