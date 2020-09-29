@@ -1,43 +1,58 @@
 $font-size: 20px;
-$font-face: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
 .signup__form {
-  
+  color: $text-muted;
+  width: 500px;
+
   form {
-    
     display: flex;
     flex-direction: column;
   }
 
   input {
+    border-radius: 5px;
+    padding-left: 20px;
     display: block;
     width: 100%;
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: 300;
     font-size: $font-size;
     line-height: $font-size * 2.5;
-    font-family: $font-face;
-    margin-bottom: $font-size * 2;
+    margin-bottom: $font-size * 1;
     border: none;
-    border-bottom: 2px solid rgba(0, 0, 0, 1);
+    background-color: #ffffffd3;
+    border: 0px solid $text-muted;
     min-width: 250px;
-    padding-left: 5px;
     outline: none;
     color: rgba(0, 0, 0, 1);
+    &::placeholder {
+      transition: 0.1s ease-out;
+      font-family: "Open Sans", sans-serif !important;
+    }
+    &:focus {
+      &::placeholder {
+        opacity: 0;
+        transform: translate(20px, 0px);
+      }
+    }
   }
 
   button {
+    font-family: "Open Sans", sans-serif;
     border: none;
-    font-family: inherit;
-    font-size: inherit;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    border-radius: 5px;
     color: white;
-    background: rgb(29, 29, 29);
+    background-image: $svg2;
+    background-color: $dcu-blue;
     cursor: pointer;
-    padding: 25px 80px;
+    padding: 18px 0px;
     display: inline-block;
     width: 100%;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
+    
     outline: none;
     position: relative;
     -webkit-transition: all 0.3s;
@@ -45,7 +60,12 @@ $font-face: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     transition: all 0.3s;
 
     &:hover {
-      background: black;
+      background-image: $svg2;
+      background-size: 60%;
     }
+  }
+
+  .error-label{
+    margin: 0;
   }
 }

@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <div className="footer__container">
       <div className="social-icons">
-        <Link href="https://www.instagram.com/dcufkui/">
+        <a href="https://www.instagram.com/dcufkui/">
           <FaInstagram />
-        </Link>
+        </a>
       </div>
       <div>Doctors' Career Updates 2020</div>
     </div>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 
 export default function DcuMg() {
   return (
@@ -7,9 +8,16 @@ export default function DcuMg() {
         <title>Medical Games | DCU 2020</title>
         <link rel="icon" href="/dlogo.png" />
       </Head>
-      <section>
+      <div className="eventdetails__container">
         <h1>DCU Medical Games</h1>
-      </section>
+        <p>
+          Merupakan sebuah pre-event DCU 2020 dengan mengadakan perlombaan
+          kedokteran yang bersifat open registration bagi mahasiswa kedokteran
+          preklinik.
+        </p>
+        <p>Coming soon</p>
+      </div>
+      <Footer/>
     </div>
   );
 }

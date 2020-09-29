@@ -37,7 +37,7 @@
   }
 }
 
-$text-grey: #313131;
+
 
 .herosectionsingular__container {
   margin: 100px 0px 100px;
@@ -45,11 +45,15 @@ $text-grey: #313131;
   text-align: center;
   padding: 30px;
   background-image: $svg1;
-  background-size: 100%;
-  color: $dcu-blue;
-  transition: 0.5s ease-in-out;
   background-color: $dcu-blue;
+  transition: 0.5s ease-in-out;
   color: white;
+
+  &:hover{
+    background-image: $svg2;
+  }
+
+  
 
   .preheading {
     font-family: "Open Sans", sans-serif;

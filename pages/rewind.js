@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Footer from "../components/Footer";
 import RewindComponent from "../components/RewindComponent";
 
 export default function rewind() {
@@ -11,6 +12,7 @@ export default function rewind() {
         </Head>
         <RewindComponent />
 
+        <a name="alessafahira"></a>
         <div className="rewind__container">
           <div className="question__container">
             <div className="avatar">
@@ -96,6 +98,7 @@ export default function rewind() {
         </div>
 
         {/* ANGGA WIRATAMA */}
+        <a name="anggawiratama"></a>
         <div className="rewind__container">
           <div className="question__container">
             <div className="avatar">
@@ -164,8 +167,10 @@ export default function rewind() {
           </div>
         </div>
         {/* DIO ALIEF */}
+        <a name="dioalief"></a>
         <div className="rewind__container">
           <div className="question__container">
+          
             <div className="avatar">
               <img src="dioalief.jpg" alt="images" />
               <div>
@@ -251,6 +256,7 @@ export default function rewind() {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     </>
   );
