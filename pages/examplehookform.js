@@ -39,8 +39,8 @@ function ExampleHookForm() {
       <div className="home-container">
         <section>
           <div className="signup__form">
-            <h1 className="register-text-heading">UNDER DEVELOPMENT</h1>
-            <p className="register-text-text">Pendaftaran DCU 2020</p>
+            <h1 className="register-text-heading">REGISTER NOW</h1>
+            <p className="register-text">Pendaftaran DCU 2020</p>
             <div className="input-areas">
               <form className="register-form" onSubmit={handleSubmit(onSubmit)}>
                 <input
