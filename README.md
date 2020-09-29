@@ -1,5 +1,7 @@
 # Doctors' Career Updates | Next.js & Netlify Functions
 
+doctorscareerupdates.com
+
 The nodemailer is already working! Time to work on the frontend.
 
 ```
