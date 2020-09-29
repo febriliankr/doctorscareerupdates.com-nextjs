@@ -2,7 +2,8 @@ import Head from "next/head";
 import axios from "axios";
 import YearsTheme from "../components/YearsTheme";
 import EventDetails from "../components/EventDetails";
-import Rewind from "../components/Rewind";
+import Footer from "../components/Footer";
+import RewindComponent from "../components/RewindComponent";
 
 export default function Home() {
   const handleClick = (e) => {
@@ -32,7 +33,8 @@ export default function Home() {
         </section>
         <EventDetails />
         <YearsTheme />
-        <Rewind/>
+        <RewindComponent/>
+        <Footer/>
       </div>
     </div>
   );

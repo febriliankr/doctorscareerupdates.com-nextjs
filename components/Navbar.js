@@ -36,6 +36,9 @@ function Navbar() {
           <Link href="/dcu-mg">DCU MG</Link>
         </li>
         <li>
+          <Link href="/rewind">Rewind</Link>
+        </li>
+        <li>
           <Link href="/examplehookform">Register</Link>
         </li>
       </ul>

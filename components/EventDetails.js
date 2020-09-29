@@ -28,7 +28,7 @@ function EventDetails() {
               background-color: white;
             max-width: 1000px;
             padding: 30px 85px 50px 85px;
-            color: #5b6987;
+            color: #424a5e;
           }
           p {
             font-size: 20px;
