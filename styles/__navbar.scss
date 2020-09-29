@@ -19,7 +19,7 @@
     align-items: center;
     margin-left: 30px;
     color: $text-muted;
-    
+
     img {
       max-width: 50px;
       margin-left: 15px;
@@ -31,6 +31,27 @@
       text-decoration: none;
       color: $text-muted;
       cursor: pointer;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 18px;
+      }
+
+      @media (max-width: $breakpoint-iphone) {
+        display: none;
+      }
+    }
+  }
+
+  .trigger {
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 30px;
+    font-size: 30px;
+    display: none;
+    transition: 0.3s ease-in-out;
+
+    @media (max-width: $breakpoint-tablet) {
+      display: block;
     }
   }
 
@@ -45,7 +66,7 @@
     margin-right: 20px;
     font-weight: 600;
 
-    @media (max-width: $breakpoint-iphone) {
+    @media (max-width: $breakpoint-tablet) {
       display: none;
     }
 
@@ -53,7 +74,7 @@
       text-decoration: none;
       padding: 0 20px 0;
       font-size: 16px;
-    //   color: $text-color;
+      //   color: $text-color;
       color: $text-muted;
 
       &:hover {
@@ -63,10 +84,49 @@
   }
 }
 
-.shrinked_nav {
-    height: $nav-shrinked !important;
-    img {
-      max-width: 30px !important;
+.triggered__navmenu {
+  height: 100%;
+  z-index: 109;
+  transition: 0.4s ease-in-out, opacity 0.5s;
+  right: 0;
+  position: fixed;
+  backdrop-filter: blur(8px);
+  top: $nav-height;
+  width: 100%;
+  background-color: #f9f9f934;
+  ul {
+    li {
+      padding-top: 20px;
+      margin-bottom: 20px;
+      padding-bottom: 30px;
+      text-align: center;
+      width: 96%;
+      justify-content: flex-start;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.863);
+      list-style-type: none;
+      cursor: pointer;
+      font-weight: 600;
+      color: $text-muted;
+      &:hover{
+        color: $text-link;
+        background-color: rgba(255, 255, 255, 0.363);
+      }
     }
+  }
+}
 
+.shrinked_triggered {
+  top: $nav-shrinked !important;
+}
+
+.shrinked_nav {
+  height: $nav-shrinked !important;
+  img {
+    max-width: 30px !important;
+  }
+  .trigger {
+    cursor: pointer;
+    margin: 10px 40px;
+    font-size: 25px;
+  }
 }
