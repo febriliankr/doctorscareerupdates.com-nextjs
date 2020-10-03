@@ -3,14 +3,13 @@ import { useRouter } from "next/router";
 
 function RewindComponent() {
   return (
-    <div className="container">
+    <div className="rewindphotos__container">
       <h2
-        style={{
-          textAlign: "center",
-          marginBottom: "50px",
-          color: "#5b6987",
-        }}
-      >
+      style={{
+        textAlign: "center",
+        color: "#424a5e",
+        padding: "0 10px"
+      }}>
         Apa kata mereka tentang DCU?
       </h2>
 

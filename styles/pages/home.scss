@@ -1,3 +1,7 @@
+$breakpoint-big: 768px;
+$breakpoint-small: 550px;
+
+
 .home-container {
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,8 +20,13 @@
     align-items: center;
     text-align: center;
 
+
+
     .big-logo {
       max-width: 400px;
+      @media (max-width: $breakpoint-big) {
+        max-width: 60%;
+      }
     }
 
     .big-title {
@@ -31,6 +40,10 @@
           -webkit-text-fill-color: white; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: $text-muted;
+        }
+        @media (max-width: $breakpoint-big) {
+          margin: 10px 10px 10px;
+          font-size: 1rem !important;
         }
       }
     }
@@ -48,6 +61,9 @@
   background-color: $dcu-blue;
   transition: 0.5s ease-in-out;
   color: white;
+  @media (max-width: $breakpoint-big) {
+    font-size: 1rem !important;
+  }
 
   &:hover{
     background-image: $svg2;
