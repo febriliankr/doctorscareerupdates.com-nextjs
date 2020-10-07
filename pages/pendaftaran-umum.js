@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers";
 import * as yup from "yup";
 import Head from "next/head";
 import Footer from "../components/Footer";
+import { storage, db, auth, timestamp } from "../config/firebaseConfig";
+import Link from "next/link";
 
 const Schema = yup.object().shape({
   name: yup.string().required().min(3),
@@ -12,13 +14,65 @@ const Schema = yup.object().shape({
   whatsapp: yup.number().required().min(6),
 });
 
-function ExampleHookForm() {
+export default function PendaftaranUmum() {
+  const [disableSubmit, setDisableSubmit] = useState(false);
   const { handleSubmit, register, errors } = useForm({
     resolver: yupResolver(Schema),
   });
 
+  function checkAndAddToDatabase(name, email, instansi, whatsapp) {
+    let uniqueCode = "DCU20" + Math.floor(Math.random() * 1000 + 1);
+    db.collectionGroup("users")
+      .where("uniqueCode", "==", uniqueCode)
+      .get()
+      .then((snapshot) => {
+        const existingUniqueCode = snapshot.docs;
+        if (existingUniqueCode.length) {
+          checkAndAddToDatabase(name, email, instansi, whatsapp);
+        } else {
+          db.collection("users")
+            .add({
+              fkuiStudent: true,
+              name,
+              email,
+              instansi,
+              whatsapp,
+              uniqueCode,
+              timestamp,
+            })
+            .then(() => {
+              setDisableSubmit(false);
+            });
+        }
+      });
+  }
+
   const onSubmit = (formData) => {
     console.log(formData);
+    setDisableSubmit(true);
+    const { name, email, instansi, whatsapp } = formData;
+
+    db.collectionGroup("users")
+      .where("email", "==", email)
+      .get()
+      .then((snapshot) => {
+        // console.log("snapshot.docs", snapshot.docs);
+        const existingEmail = snapshot.docs;
+        if (existingEmail.length) {
+          alert(`Alamat email ${email} telah terdaftar`);
+          setDisableSubmit(false);
+        } else {
+          checkAndAddToDatabase(name, email, instansi, whatsapp);
+        }
+      });
+
+    // db.collection("users").add({
+    //   name,
+    //   email,
+    //   instansi,
+    //   whatsapp,
+    //   timestamp,
+    // });
   };
 
   const labelClick = (e) => {
@@ -26,8 +80,7 @@ function ExampleHookForm() {
   };
 
   //errors.instansi && console.log("error name", errors.instansi);
-
-  console.log(errors);
+  // console.log(errors);
 
   return (
     <>
@@ -62,14 +115,6 @@ function ExampleHookForm() {
                 />
                 <p className="error-label">{errors.email?.message}</p>
                 <input
-                  autoComplete="new-password"
-                  className="register-input"
-                  name="password"
-                  type="password"
-                  placeholder="Password"
-                  ref={register}
-                />
-                <input
                   className={`register-input ${
                     errors.instansi ? "username-error" : null
                   }`}
@@ -89,18 +134,21 @@ function ExampleHookForm() {
                 <p className="error-label">{errors.whatsapp?.message}</p>
 
                 <div className="pt-1">
-                  <button onClick={handleSubmit}>Register</button>
+                  <button disabled={disableSubmit} onClick={handleSubmit}>
+                    Register
+                  </button>
                 </div>
               </form>
             </div>
 
             {/* <pre>{JSON.stringify(formData, null, 2)}</pre> */}
+            <Link href="/pendaftaran-fkui">
+              <p className="mt-2 link">Pendaftaran untuk Mahasiswa FKUI</p>
+            </Link>
           </div>
         </section>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
-
-export default ExampleHookForm;

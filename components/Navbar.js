@@ -43,7 +43,7 @@ function Navbar() {
     <>
       <div className={scrolled ? "shrinked_nav navbar" : "navbar"}>
         <span>
-          <img src="dlogo.png" alt="DCU" />
+        <Link href="/"><img src="dlogo.png" alt="DCU" /></Link>
           <div className="navbar__title">
             <Link href="/">Doctors' Career Updates</Link>
           </div>
@@ -64,7 +64,7 @@ function Navbar() {
             <Link href="/rewind">Rewind</Link>
           </li>
           <li>
-            <Link href="/examplehookform">Register</Link>
+            <Link href="/pendaftaran-umum">Register</Link>
           </li>
         </ul>
       </div>
@@ -85,7 +85,7 @@ function Navbar() {
           <Link href="/rewind">
             <li>Rewind</li>
           </Link>
-          <Link href="/examplehookform">
+          <Link href="/pendaftaran-umum">
             <li>Register</li>
           </Link>
         </ul>

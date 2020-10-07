@@ -5,14 +5,14 @@ $font-size: 18px;
   width: 500px;
   border-radius: 10px;
   background-color: white;
-  padding: 30px 50px 60px;
+  padding: 30px 50px 30px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);
 
   h1 {
     margin-bottom: 10px;
   }
 
-  .register-text{
+  .register-text {
     margin-top: 0;
     margin-bottom: 10px;
     padding-bottom: 20px;
@@ -69,7 +69,7 @@ $font-size: 18px;
     display: inline-block;
     width: 100%;
     text-transform: uppercase;
-    
+
     outline: none;
     position: relative;
     -webkit-transition: all 0.3s;
@@ -80,9 +80,28 @@ $font-size: 18px;
       background-image: $svg2;
       background-size: 60%;
     }
+
+    &:disabled {
+      opacity: 0.4;
+    }
   }
 
-  .error-label{
+  .error-label {
     margin: 0;
   }
 }
+
+p.link {
+  cursor: pointer;
+}
+
+
+.custom-upload{
+  cursor: pointer;
+}
+
+label{
+  margin-top: 10px;
+  text-align: left;
+}
+
