@@ -4,7 +4,7 @@ import React from "react";
 function EventDetails() {
   return (
     <div className="eventdetails__container">
-      <h2>Apa itu Doctors' Career Updates?</h2>
+      <h2>Apa itu Doctor's Career Updates?</h2>
       <p>
         Doctor’s Career Updates 2020 merupakan acara 2 tahun sekali yang
         diselenggarakan oleh Departemen Pendidikan dan Profesi BEM IKM FKUI

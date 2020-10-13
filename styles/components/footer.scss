@@ -6,12 +6,13 @@
   text-align: center;
 
   .social-icons {
-    svg {
+    img {
       width: fit-content;
-      font-size: 29px;
+      max-width: 35px;
+      margin: 12px;
       cursor: pointer;
       &:hover {
-        color: $text-link;
+        filter: opacity(50%);
       }
       margin-bottom: 15px;
     }

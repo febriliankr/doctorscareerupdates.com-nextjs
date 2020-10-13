@@ -6,7 +6,10 @@ export default function Footer() {
     <div className="footer__container">
       <div className="social-icons">
         <a href="https://www.instagram.com/dcufkui/">
-          <FaInstagram />
+          <img src="/lineicon.svg" alt="LINE" />
+        </a>
+        <a href="https://www.instagram.com/dcufkui/">
+          <img src="/instagramicon.svg" alt="Instagram" />
         </a>
       </div>
       <div>Doctors' Career Updates 2020</div>

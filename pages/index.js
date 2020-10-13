@@ -17,6 +17,8 @@ export default function Home() {
       <Head>
         <title>Doctors' Career Updates</title>
         <link rel="icon" href="/dlogo.png" />
+        <meta property="og:image" content="/dlogo.png"/>
+        <meta property="twitter:image" content="/dlogo.png"/>
       </Head>
       <div className="home-container">
         <section>
