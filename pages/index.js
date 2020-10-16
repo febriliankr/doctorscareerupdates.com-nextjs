@@ -4,6 +4,7 @@ import YearsTheme from "../components/YearsTheme";
 import EventDetails from "../components/EventDetails";
 import Footer from "../components/Footer";
 import RewindComponent from "../components/RewindComponent";
+import ResponsiveCarousel from '../components/Carousel'
 
 export default function Home() {
   const handleClick = (e) => {
@@ -31,6 +32,9 @@ export default function Home() {
             <h1>The biggest seminar aiming to broaden knowledge about the opportunities and development of the medical profession in various employment sectors.
             </h1>
           </section>
+        </section>
+        <section className="home__carousel">
+          <ResponsiveCarousel/>
         </section>
         <EventDetails />
         <YearsTheme />

@@ -21,6 +21,8 @@
     "react-dom": "16.13.1",
     "react-hook-form": "^6.8.6",
     "react-icons": "^3.11.0",
+    "react-image-gallery": "^1.0.8",
+    "react-responsive-carousel": "^3.2.10",
     "yup": "^0.29.3"
   }
 }
