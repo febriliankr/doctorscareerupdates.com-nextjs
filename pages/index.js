@@ -37,7 +37,14 @@ export default function Home() {
           <ResponsiveCarousel/>
         </section>
         <EventDetails />
+        <section className="home__speakers">
+        <div>
+        <h1>Our Speakers</h1>
+        <h2>To Be Confirmed</h2>
+        </div>
+        </section>
         <YearsTheme />
+
         <RewindComponent/>
         <Footer/>
       </div>
